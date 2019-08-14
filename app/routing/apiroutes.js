@@ -2,10 +2,9 @@ var path = require('path');
 
 var friends = require('../data/friends');
 
-// Export API routes
 module.exports = function(app) {
 	
-
+//  i think i have the apiRoute correct but i dont think im connecting to the friends data 
 	app.get('/api/friends', function(req, res) {
 		res.json(friends);
 	});
@@ -35,10 +34,8 @@ module.exports = function(app) {
 			}
 		}
 
-		// Add new user
 		friends.push(userInput);
 
-		// Send appropriate response
 		res.json({status: 'OK', matchName: matchName, matchImage: matchImage});
 	});
 };
