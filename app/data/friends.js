@@ -65,7 +65,7 @@ var friendsArray = [
 	},
 	{
 		name: '',
-		photo: ',
+		photo: '',
 		scores: [
 			'1',
 			'1',
