@@ -11,7 +11,7 @@ module.exports = function(app) {
 
 	app.post('/api/friends', function(req, res) {
 		var userInput = req.body;
-	
+	console.log(userInput);
 
 		var userResponses = userInput.scores;
 		
@@ -20,22 +20,23 @@ module.exports = function(app) {
 		var totalDifference = 10000;
 
 		for (var i = 0; i < friends.length; i++) {
-
 			var diff = 0;
 			for (var j = 0; j < userResponses.length; j++) {
 				diff += Math.abs(friends[i].scores[j] - userResponses[j]);
+			console.log(diff)
 			}
 			
 			if (diff < totalDifference) {
-
+			console.log("found friend")
 				totalDifference = diff;
 				matchName = friends[i].name;
 				matchImage = friends[i].photo;
+	
 			}
 		}
 
 		friends.push(userInput);
-
+		console.log(matchName, matchImage);
 		res.json({status: 'OK', matchName: matchName, matchImage: matchImage});
 	});
 };

@@ -11,7 +11,7 @@
 	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
 
 	<!-- Link to reset stylesheet -->
-	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 
 	<!--Import Google Icon Font-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,8 +21,8 @@
 
 	<!-- Compiled and minified Materialize JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-
-	<link rel="stylesheet" href="css/style.css">
+	<!-- Link to the Css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -252,18 +252,16 @@
 				$(document).ready(function () {
 					$('select').material_select();
 					$('.modal').modal({
-						dismissible: false, // Modal can be dismissed by clicking outside of the modal
-						opacity: .5, // Opacity of modal background
-						inDuration: 300, // Transition in duration
-						outDuration: 200, // Transition out duration
-						startingTop: '4%', // Starting top style attribute
-						endingTop: '10%' // Ending top style attribute
+						dismissible: false, 
+						opacity: .5,
+						inDuration: 300, 
+						outDuration: 200,
+						startingTop: '4%',
+						endingTop: '10%'
 					});
 				});
-				// Activate submit button
 				$('#submitButton').on('click', function (event) {
 					event.preventDefault();
-					// Gather user inputs
 					var userInput = {
 						name: $('#userName').val().trim(),
 						photo: $('#userPhoto').val().trim(),
@@ -280,15 +278,11 @@
 							$('#question10').val().trim()
 						]
 					};
-					// console.log('userInput = ' + JSON.stringify(userInput));
-					// Add user inputs to friends list
 					$.post('/api/friends', userInput)
 						.done(function (data) {
-							// console.log('response = ' + JSON.stringify(data));
-							// Set the name and image values of friend match
+							console.log(data)
 							$('#userMatch').html(data.matchName);
 							$("#userMatchImage").attr("src", data.matchImage);
-							// Pop open the modal dialog
 							$('#modal1').modal('open');
 						});
 				});

@@ -64,8 +64,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: '',
-		photo: '',
+		name: 'Peter',
+		photo: 'http://www.gstatic.com/tv/thumb/persons/733885/733885_v9_bb.jpg',
 		scores: [
 			'1',
 			'1',
@@ -80,8 +80,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: '',
-		photo: '',
+		name: 'Wade',
+		photo: 'https://pmcvariety.files.wordpress.com/2015/12/ryan-reynolds-2.jpg?w=1000',
 		scores: [
 			'1',
 			'1',
@@ -96,8 +96,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: '',
-		photo: '',
+		name: 'Logan',
+		photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/HughJackmanByPaulCush2011.jpg/170px-HughJackmanByPaulCush2011.jpg',
 		scores: [
 			'5',
 			'4',
@@ -112,8 +112,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: '',
-		photo: '',
+		name: 'Steve',
+		photo: 'https://www.cheatsheet.com/wp-content/uploads/2019/08/Chris-Evans-7-1024x757.jpg',
 		scores: [
 			'5',
 			'2',
@@ -128,8 +128,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: '',
-		photo: '',
+		name: 'Tony',
+		photo: 'https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MjE@._V1_.jpg',
 		scores: [
 			'5',
 			'5',
@@ -144,8 +144,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: '',
-		photo: '',
+		name: 'Robert',
+		photo: 'https://www.gannett-cdn.com/presto/2019/08/12/USAT/4b620798-77e7-4d04-9923-f1771d4ebc0a-Chris_Hemsworth_x.jpg?width=1200&format=pjpg&auto=webp',
 		scores: [
 			'1',
 			'1',

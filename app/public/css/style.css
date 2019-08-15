@@ -6,7 +6,13 @@ body {
    min-height: 100vh;
    flex-direction: column;
 }
+#userMatch {
+    color: black !important;
+}
 
+.modal {
+    background-color: white;
+}
 header {
     height: 100px;
 }
