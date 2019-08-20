@@ -1,7 +1,7 @@
 var friendsArray = [
 	{
 		name: 'Michael',
-		photo: 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiQi5_ihYHkAhUK2FQKHc0HCAUQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.popsugar.com%2Fentertainment%2FMichael-Scott-Misquotations-Office-Video-45178441&psig=AOvVaw28Lp8mBgziWqNqHIxW6UaK&ust=1565826863555285',
+		photo: 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi7k4ngl4rkAhXC3J4KHReeA0gQjRx6BAgBEAQ&url=http%3A%2F%2Fwhatculture.com%2Ftv%2Fthe-office-quiz-how-well-do-you-know-michael-scott&psig=AOvVaw2cfuXxAsK0dWBhColX0w9V&ust=1566140927187117',
 		scores: [
 			'1',
 			'5',
