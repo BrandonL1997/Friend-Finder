@@ -17,8 +17,8 @@ app.use(bodyParser.text());
 // Add the application routes
 // require(path.join(__dirname, './app/routing/apiRoutes'))(app);
 // require("./app/routing/apiRoutes.js")(app);
-require("./routing/apiroutes")(app);
-require("./routing/htmlroutes")(app);
+require("./app/routing/apiroutes")(app);
+require("./app/routing/htmlroutes")(app);
 // require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 // Start listening on PORT
